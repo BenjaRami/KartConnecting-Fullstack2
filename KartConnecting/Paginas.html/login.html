@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>KartConnecting - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <div class="nav-brand">
+        <img src="../assets/img/logo.png.png" alt="Logo" class="logo">
+        <span>KartConnecting</span>
+      </div>
+      <div class="nav-links">
+        <a href="Inicio.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="jugadores.html">Jugadores</a>
+        <a href="equipos.html">Equipos</a>
+        <a href="torneos.html">Torneos</a>
+        <a href="quienes.html">Quienes somos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="text-center mt-4">🔑 Iniciar sesión</h1>
+    <p class="text-center">Accede a tu cuenta KartConnect</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <form class="login-form p-4 rounded shadow">
+          <!-- Correo -->
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="ejemplo@mail.com" required>
+          </div>
+
+          <!-- Contraseña -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="********" required>
+          </div>
+
+          <!-- Recordarme -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="recordarme">
+            <label class="form-check-label" for="recordarme">Recordarme</label>
+          </div>
+
+          <!-- Botones -->
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success">Ingresar</button>
+            <a href="registro.html" class="btn btn-outline-secondary">Crear cuenta</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center mt-4">
+    © 2025 KartConnect - Proyecto académico
+  </footer>
+      <!-- JS externo -->
+    <script src="../js/main.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/data.js"></script>
+</body>
+</html>
